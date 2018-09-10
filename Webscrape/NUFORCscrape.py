@@ -30,22 +30,22 @@ while batch <=142:
             sightpath = sightdata.xpath('//tbody/tr/td/font/text()')
             sighting = [sightpath]
             error = ['error on:', site]
-            with open("NUFORCtwentyRAW.csv", "a") as fp:
+            with open("NUFORCraw.csv", "a") as fp:
                 wr = csv.writer(fp, dialect='excel')
                 slist = [bstr, site]
                 for each_sight in sighting:
                     srep = [w.replace("/n", "") for w in each_sight]
                     slist.extend(srep)
                     wr.writerow(slist)
-        except lxml.etree.XMLSyntaxError: 
+        except lxml.etree.XMLSyntaxError:
             print('error on ' + site)
-            with open("NUFORCtwentyRAW.csv", "a") as fp:
+            with open("NUFORCraw.csv", "a") as fp:
                wr = csv.writer(fp, dialect='excel')
                wr.writerow(error)
             continue
         except UnicodeEncodeError:
             print('Unicode error on ' + site)
-            with open("NUFORCtwentyRAW.csv", "a") as fp:
+            with open("NUFORCraw.csv", "a") as fp:
                wr = csv.writer(fp, dialect='excel')
                wr.writerow(error)
     if scount == 1000:
