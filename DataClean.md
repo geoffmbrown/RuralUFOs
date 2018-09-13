@@ -135,4 +135,6 @@ The resulting dataset used in this project, after this step was completed totale
 In GoogleRefine, select the 'locationRaw' column and create a column based on it. Name the new column 'locCopy'.
 
 Testing.
-![locCopy Test][/img/locCopy.png]
+![locCopy Test][https://github.com/geoffmbrown/RuralUFOs/blob/master/img/locCopy.png]
+
+![locCopy2][https://raw.githubusercontent.com/geoffmbrown/RuralUFOs/master/img/locCopy.png]
