@@ -1,7 +1,9 @@
 # Data Cleaning Steps
 After webscraping NUFORC.org data using [NUFORCscrape.py](Webscrape/NUFORCscrape.py) the output data (NUFORCraw.csv) requires a lot of preparation before it can be used as an input dataset for GIS or text analysis.
 
-This file acts as a walkthrough for every step in the data cleaning process. I aim to document every spreadsheet formula, code snipped, and the reasoning behind many selection and exclusion decisions made while cleaning the data. Tools used include LibreOffice Spreadsheets (or Microsoft Excel), Python, and GoogleRefine.  
+This file acts as a walkthrough for every step in the data cleaning process. I aim to document every spreadsheet formula, code snippet, and the reasoning behind many selection and exclusion decisions made while cleaning the data. Tools used include LibreOffice Spreadsheets (or Microsoft Excel), Python, and GoogleRefine.
+
+Datasets were saved after every step. Cleaned data is not available for download at the present moment.
 
 Data used in this example was gathered on 8-30-2018.  
 
@@ -107,7 +109,9 @@ When this step has been completed the first three rows of the dataset should res
 
 ##### Error Checking
 
-Open the new dataset in a spreadsheet program and sort the values by the first column, the batch number ('bNo').
+This step can be completed in GoogleRefine or by opening the data in a spreadsheet program.
+
+Begin by sorting the values by the first column, the batch number ('bNo').
 
 This will separate all successfully loaded rows from the rows where an error occurred during the request or writing stage. Errors can be brought to the top of the dataset using a descending sort.
 
@@ -128,4 +132,7 @@ The resulting dataset used in this project, after this step was completed totale
 #
 ### Step 6: Split by 'locationRaw'
 
-Start with ThesisDCStep5.csv on desktop
+In GoogleRefine, select the 'locationRaw' column and create a column based on it. Name the new column 'locCopy'.
+
+Testing.
+![locCopy Test][/img/locCopy.png]
