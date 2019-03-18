@@ -7,4 +7,4 @@ Using webscraped data from a public repository of UFO sighting reports, NUFORC.o
 
 This repository stores all code snippets and scripts used during the analysis of the UFO sighting data.
 
-Currently the data cleaning process is being documented in the [DataClean.md](DataClean.md1) file.
+Currently the data cleaning process is being documented in the [DataClean.md](DataClean.md) file.
